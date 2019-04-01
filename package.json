@@ -1,0 +1,36 @@
+{
+  "name": "vacuum",
+  "version": "0.0.1",
+  "description": "Dependency injection container",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "node.js",
+    "context",
+    "dependency injection"
+  ],
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/ORusak/vacuum"
+  },
+  "bugs": {
+    "url": "https://github.com/ORusak/vacuum",
+    "email": "hare.brown@gmail.com"
+  },
+  "author": "Oleg Rusak",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "0.22.0",
+    "eslint": "5.15.1",
+    "should": "^13.2.3",
+    "sinon": "4.1.2",
+    "standard": "12.0.1"
+  },
+  "engines": {
+    "node": ">=8.13.4"
+  }
+}
