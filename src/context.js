@@ -39,6 +39,11 @@ class Context {
         return null
     }
 
+    _has (name) {
+        
+        return this._dependencies.has(name)
+    }
+
     _noRewrite (name) {
         if (this._dependencies.has(name)) {
             throw new Error('non rewriteble value');

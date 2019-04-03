@@ -14,13 +14,14 @@ class Basket {
 
         this._logger = ctx.logger;
         this._item = ctx.item;
+        // console.log(this._item)
     }
 
     add (value) {
 
-        const type = this._item.getType();
+        const type = this._item.getType(value);
 
-        return null;
+        return type;
     }
 }
 

@@ -42,6 +42,12 @@ test.only('cross ref', t => {
     const ctx = app._ctx
 
     const basket = ctx.basket;
+
+    const type = basket.add({
+        type: 'food'
+    })
+
+    console.log(type)
     
     should.ok(app);
 });

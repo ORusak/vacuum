@@ -42,9 +42,18 @@ class AppContext extends Context {
     get item () {
         const handler = {
             get: (obj, prop) => {
-                const this._has('item')
+                obj
+                prop
+                if (this._has('item')) {
+                    const item = this._get('item')
 
-                return User[prop]
+                    return item[prop];
+                }
+
+                this._set('item', this._singleton(Item, [this, configOptions]));
+                const item = this._get('item')
+                
+                return item[prop];
             }
         }
 
